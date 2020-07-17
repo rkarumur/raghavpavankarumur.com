@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en-US">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Raghav Karumur </title>
+    <link rel="stylesheet" type="text/css" href="./styles/mystyle.css" />  
+  </head>
+<body>
+<div id="Page">
+<div id = "MenuHeader">
+</div>
+<div id="Banner">
+<div id="BannerLeft">
+
+<img class="img-circle" src="./styles/pic00.jpg">
+
+</div> <!-- BannerLeft -->
+
+<div id="BannerRight">
+  <h1>Raghav Pavan Karumur</h1>
+  <h2>
+  </h2>
+  <h2> Doctoral Candidate </h2>
+  <h2> Computer Science and Engineering </h2>
+  <h2> University Of Minnesota, Twin Cities </h2>
+  <h3> email: raghav at umn dot edu </h3>
+ <h3> [<a href="https://scholar.google.com/citations?user=xoT4frkAAAAJ&hl=en">Google Scholar Profile</a>] </h3>
+<!--    <h3>   
+    office: 5-240 <a href="http://campusmaps.umn.edu/kenneth-h-keller-hall"  target="_blank">Keller Hall</a>    
+  </h3> -->
+</div> <!-- BannerRight -->
+</div> <!-- Banner -->
+
+<div id="Menuone">
+
+<nav id="primary_nav_wrap">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="portfolio.html"> Portfolio </a></li>
+  <li class="current-menu-item"><a href="projects.html"> Projects </a> </li>
+  <li><a href="publications.html">Publications </a> </li>
+  <li><a href="leadership.html">Leadership </a>  </li>
+  <li><a href="contact.html">Contact Me</a></li>
+</ul>
+</nav>
+</div>
+<div id="Main">
+<br/>
+
+<div class="section">
+<h1> Different Strokes for Different Folks: The Value of Personality Type in Recommender Systems and Social Computing </h1>
+
+ <p> Did you know that your personality could be used to predict your behavior (how long you stay, what you do, whether and how much you are likely to rate) on an online site and what to recommend to you? That’s what we found in our latest research using the <a href="movielens.org" target="_blank">MovieLens</a> recommender system and the Big Five Personality scale for modeling user personality.
+ </p>
+
+<p> <img src="./styles/personality.png"> </p>
+
+<p>In our first piece of research, we try to study newcomer retention, type, and level of contribution associated with various personality types for 1008 new users. We found that if you are an introvert, you are likely to stay longer and be more active on MovieLens. If you are highly open, you are likely to tag more, and if you are less agreeable, you are likely to provide more number of ratings!! </p>
+
+<p>In our next piece of research, we tried to study different personality types vary in their preferences for various categories such as Genres, Popularity (high or low), and Rating level (low-rated movies, medium-rated, and high-rated).
+ </p>
+
+<p> <img src="./styles/personality_cube.png"> </p>
+				
+<p> We see from the picture above that highly agreeable users are less critical of movie categories (provide at least half-star higher ratings) in some categories compared to less agreeable users. </p>
+
+<p> Findings such as these suggest that aggregating ratings of all users to provide recommendations may not be a good idea. Also, documenting stable relationships between individual differences and category preferences can be useful for online system designers as they customize the system to guide people towards tasks that need to be done (such as recommending the right categories to elicit ratings from users), or tasks the users will find rewarding (such as providing better cold-start recommendations, personalizing lists of movies at different times) and also decide which users to invest retention efforts in. </p>
+
+<p> To know more about our data collection process, analyses, and for a full list of all of our findings on various personality types, please check out our papers on <a href="https://dl.acm.org/citation.cfm?id=2930246" target="_blank"> modeling newcomer personality</a>, <a href="https://dl.acm.org/citation.cfm?id=2959140" target="_blank">personality and category preferences</a> (<a href="https://www.youtube.com/watch?v=U8bQfaZTDL4&t=94s" target="_blank">video</a>), and <a href="https://link.springer.com/article/10.1007/s10796-017-9800-0" target="_blank">personality and user behavior on recommender systems</a>!
+ </p>
+ 	  
+	  <h1> The more they try, the more they are likely to come back!! </h1>
+	  
+	 <p> Are you trying to launch an online site for customers? Do you know that on an average, 60% of users do not return after using the site once?</p>
+
+	 <p> In this research, we discover factors that predict whether first-time users return to MovieLens, our movie recommendation site.  A model based on these factors successfully predicts 70% of returning users (and non-returning ones).  Notably, the best single predictor of user return is the diversity of features explored in the user’s first session!  <em>Along the way, we develop a process and metric for activity diversity -- one that can be applied to any site or context. </em> Interested in further details? </p>
+
+	 <p> <img src="./styles/activity_diversity_of_user.png"> </p>
+	 
+ <p> Upon discussion with psychologist Mark Snyder, a Professor at the University of Minnesota, my collaborator (Joe Konstan) and I learned that a volunteer who is aware of more ways of getting involved with an organization is more likely to remain committed longer than one who isn’t. For example, a volunteer for Red Cross who is rotated through different activities such as giving out cookies, checking people in for blood drives, and helping the hurricane victims is more likely to be committed to Red Cross in the long run compared to a volunteer who only gives out cookies. We wondered if that is true with online sites too. A site like MovieLens has 17 different and very diverse features (see figure). We hypothesized that someone who has tried out more features in the first session is more likely to return to the site than one who hasn’t. </p>
+
+ <p> <img src="./styles/activity_list.png"> </p>
+
+<p> But how do we capture the diversity of features tried? From the above figure, we see that features like providing ratings, or tags are very similar (annotations), but these are very different from inviting your friends to the site, or managing your own profile. So, a simple count of the number of features is not a good diversity metric. Also, most existing diversity metrics such as the Gini-Simpson Index increase with the level of overall activity. This will make it difficult to tease out and study the effect of diversity independent of the amount of activity. All these challenges led to the design of a new metric.</p>			
+
+<p> <img src="./styles/classification_tree_movielens_ver2.png" width="600" height="270"> </p>
+
+<p> Based on a distance-tree analysis of the online site’s features, in this work, we developed a metric called DSCORE that addresses all these challenges. First we used a card-sorting technique to organize all of the site’s features into a tree (asking site users and administrators to cluster together related features). We then computed DSCORE which aggregates the diversity of experiences, giving higher weight to activities that are farther apart in the classification tree. Together with another metric called ASCORE for the total amount of contributions, we build machine learning models for user retention. Our results show that diversity is the best single predictor of first-time user retention. Based on future experiments that can confirm our findings, sites could be re-designed for a more diverse first-time experience that can get new users to stay longer. </p>
+
+<p>Check out my paper on <a href="http://dl.acm.org/citation.cfm?id=2820009" target="_blank">early activity diversity</a> for more details!</p>
+
+<h1> Together: A collaborative end-of-life decision making tool for (Ovarian) Cancer Patients entering Hospice </h1>
+
+<p> Know of someone diagnosed with Cancer? Ovarian Cancer accounts for more deaths than any other kind of cancer in women.  It affects older women; approximately 90% are diagnosed when they are older than 40 and the greatest number of cases are diagnosed in women over the age of 60. In most cases, the diagnosis happens at an advanced stage (Stage III-IV). The risk for recurrence is 60-70% and women who recur currently cannot be cured. </p>
+
+<p> <img src="./styles/together.png" width="400" height="270" > </p>
+
+<p> For individuals with metastatic disease and/or high symptom burden (both of which are characteristic of women with Ovarian Cancer, the American Society of Clinical Oncology recommends early provision of palliative care - a process aimed at improving the quality of life and reducing symptoms. Enabling and supporting patients to make informed decisions about their care represents a core element of quality palliative cancer care.  </p>
+
+<p> Due to lack of online interventions for women with ovarian cancer, and none directed at advance care decision making, we developed a comprehensive website with (i) personalized expert information tailored to disease phase and learning/coping style, (ii) secure access to online forums for discussions with other patients, caregivers and providers, (iii) emotion and cancer-related symptom tracking tools and (iv) tools to promote advance care decision making. We published the results of usability testing of this website in <a href="http://www.tandfonline.com/doi/abs/10.1080/10447318.2016.1140528#.Vt9RCJwrLIU" target="_blank">IJHCI</a>. This work serves as a model for future research aimed at developing decision-making tools for other cancers and incurable diseases. </p>
+
+</p> 
+
+</div>
+
+</div> <!-- Main -->
+
+</div> <!-- Page -->
+
+</div></div></body></html>
